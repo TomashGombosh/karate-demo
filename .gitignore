@@ -1,0 +1,10 @@
+.idea/
+.allure/
+target/
+allure-results
+settings.xml
+
+.DS_store
+.vscode
+*.jar
+

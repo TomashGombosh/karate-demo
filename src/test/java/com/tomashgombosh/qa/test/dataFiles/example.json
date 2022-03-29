@@ -1,0 +1,4 @@
+{
+  "id": "#number",
+  "cities": "#[] {name: '#string', region: '#string'}"
+}
