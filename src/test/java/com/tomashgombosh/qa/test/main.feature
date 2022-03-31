@@ -2,9 +2,5 @@ Feature: Check
 
   Scenario:
     * def schema = read('dataFiles/example.json')
-    * def port = karate.start('mockServer.feature').port
-    * url 'http://localhost:' + port
-    * path getObject
-    * method get
-    * status 200
+    * def response = [{"id": 1, "cities": [{"name": "Uzhhorod", "region": "ZK"}, {"name": "Kyiv", , "region": "ZK"}]}, {"id": 2, "cities": [{"name": "Uzhhorod", "region": "ZK"}, {"name": "Kyiv", , "region": "ZK"}]}]
     * match response == '#[] schema'
